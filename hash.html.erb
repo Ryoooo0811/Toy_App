@@ -1,0 +1,31 @@
+user = {}
+user["first_name"] = "Michael"
+user["last_name"] = "Hartl"
+user["first_name"]
+user = { "first_name" => "Michael", "last_name" => "Hartl" }
+user = { :name => "Michael Hartl", :email => "michael@example.com" }
+user = { name: "Michael Hartl", email: "michael@example.com" }
+user[:name]
+user[:password]
+puts print "ハッシュではシンボルをキーとして使うことが一般的なため、Rubyでは新しい記法がサポートされた。"
+h1 = { :name => "Michael Hartl", :email => "michael@example.com" }
+h2 = { :name => "Michael Hartl", :email => "michael@example.com" }
+h1 == h2
+
+#ハッシュ中のハッシュ
+params = {}
+params[:user] = { name: "Michael Hartl", email: "mhartl@example.com" }
+params
+params[:user][:email]
+
+#配列や範囲オブジェクトと同様にハッシュもeachメソッドに応答可能
+flash = { success: "It worked!", danger: "It failed." }
+flash.each do |key, value|
+  puts "Key #{key.inspect} has value #{value.inspect}"
+end
+
+#inspectメソッド
+puts (1..5).to_a
+puts (1..5).to_a.inspect
+puts :name, :name.inspect
+puts "It worked!", "It worked!".inspect
