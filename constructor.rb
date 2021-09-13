@@ -23,3 +23,15 @@ end
 w = Word.new    # Wordオブジェクトを作成
 w.palindrome?("foobar")
 w.palindrome?("level")
+
+class String
+  def palindrome?
+    self = self.reverse
+  end
+end
+"deified".palindrome?
+
+"".blank?
+"         ".empty?
+"         ".blank?
+nil.blank?
