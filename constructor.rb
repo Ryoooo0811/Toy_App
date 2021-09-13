@@ -14,4 +14,12 @@ h[:foo]                 # 存在しないキーの値にアクセスする
 h = Hash.new(0)         # 存在しないキーのデフォルト値をnilから0にする。
 h[:foo]
 
-class Word
+class Word < String           # WordクラスはStringクラスを継承する
+# 文字列が回文であればtrueを返す。
+  def palindrome?(string)
+    self == self.reverse      # selfは文字列自信を表す
+  end
+end
+w = Word.new    # Wordオブジェクトを作成
+w.palindrome?("foobar")
+w.palindrome?("level")
