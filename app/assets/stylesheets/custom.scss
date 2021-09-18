@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 // 変数を定義
-&light-grey: #777;
+// $light-gray: #777;
 
 h1 {
   font-size: 3em;
@@ -44,7 +44,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grey-light;
+  color: $gray-light;
 }
 
 p {
@@ -74,7 +74,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: $grey-light;
+  color: $gray-light;
   a {
     color: #555;
     &:hover {
