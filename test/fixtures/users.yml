@@ -3,6 +3,7 @@ murapyon:
   name: むらぴょん
   email: a@a.com
   password_digest: <%= User.digest('password') %>
+  admin: trues
   
 shigeru:
   name: しげる
